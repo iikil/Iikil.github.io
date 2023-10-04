@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目简介</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center; /* 文本居中对齐 */
+            background-color: #f2f2f2; /* 设置背景颜色 */
+            color: #333; /* 设置文字颜色 */
+            padding: 20px;
+        }
+
+        
+
+        .content {
+            
+            display: flex; /* 使用 Flex 布局 */
+            justify-content: center; /* 水平居中对齐内容 */
+        }
+
+        .section {
+            width: (1-40/width)*100%; /* 设置白色和蓝色部分宽度为相同值 */
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff; /* 设置内容背景颜色 */
+            border-radius: 5px; /* 设置圆角边框 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+        }
+
+        h1, h2, h3 {
+            color: #000000; /* 设置标题颜色 */
+        }
+
+        ul {
+            list-style: none; /* 移除列表样式 */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        video {
+            width:80%;
+            display: block; /* 使视频居中 */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>项目简介</h1>
+    </header>
+
+
+
+    <section class="section" id="projects">
+        <ul>
+            <li>
+                <h3>盾构地质数字孪生项目</h3>
+                <p>项目描述：该项目对地下隧道工程掘进施工面临的挑战，研究盾构机掘进状态的物理模拟、三维地质
+建模、地震波可视化等技术，构建PC及AR/VR头戴式设备多平台地质与施工全要素信息数字孪生系统</p>
+                <!-- 添加本地视频文件 -->
+                <video width="100%" controls>
+                    <source src="PCPlatform.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放。
+                </video>
+                <p>PC端demo</p>
+                <video width="100%" controls>
+                    <source src="ARPlatform.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放。
+                </video>
+                <p>AR端demo</p>
+            </li>
+            <li>
+                <h3>海信医疗-超声渲染项目</h3>
+                <p>项目描述：该项目与海信医疗合作，实现从超声数据采集到成像，原有的成像效果达不到医院分析的需求，我们通过对数据的降噪，裁剪，以及添加光照渲染等技术提高超声数据的成像质量</p>
+                <!-- 添加本地视频文件 -->
+                <!-- 添加本地视频文件 -->
+                <video width="100%" controls>
+                    <source src="Ultrasound.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放。
+                </video>
+                <p>超声渲染demo</p>
+            </li>
+            <!-- 添加更多的项目经历项目 -->
+        </ul>
+    </section>
+</body>
+</html>
